@@ -4,13 +4,31 @@ body {
     font-style: normal;
 }
 
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 0 240px;
+}
+
 .heading {
     font-size: 45px;
 }
 
-header {
-    background-color: rgba(255, 144, 14, 0.1);
-    padding: 0 240px;
+.section-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.button {
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Navbar Style */
@@ -34,15 +52,30 @@ nav {
 .nav-item li a {
     text-decoration: none;
     color: black;
-    /* margin-right: 30px; */
 }
 
 /* Banner Section style*/
+.banner-info {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    margin-top: 102px;
+    margin-bottom: 50px;
+    width: 862px;
+}
+
+.banner-title {
+    font-size: 64px;
+}
 
 /* Mobile Device Responsive */
 @media screen and (max-width:576px) {
     header {
         padding: 0;
+    }
+
+    .heading {
+        font-size: 30px;
     }
 
     /* navbar responsive */
@@ -55,5 +88,34 @@ nav {
         margin-top: -10px;
         row-gap: 10px;
         margin-right: 20px;
+    }
+
+    /* banner responsive */
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .banner-info {
+        width: 100%;
+        margin-top: -15px;
+    }
+
+    .banner-title {
+        font-size: 35px;
+    }
+    .section-description {
+        margin-top: -25px;
+    }
+
+    .button {
+        width: 130px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .banner-img img {
+        width: 100%;
     }
 }
