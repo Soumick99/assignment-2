@@ -199,6 +199,24 @@ nav {
     width: 862px;
 }
 
+/* Bonus Section */
+.future-sponsor {
+    text-align: center;
+    padding: 30px;
+    width: 586px;
+    height: 400px;
+    background-color: burlywood;
+    margin: 80px auto 0;
+    border-radius: 20px;
+    color: white;
+}
+
+.future-sponsor img {
+    width: 250px;
+    height: 250px;
+    margin-top: -30px;
+}
+
 /* footer */
 footer p {
     text-align: center;
@@ -376,6 +394,26 @@ footer p {
         margin-top: 50px;
     }
 
+    /* Bonus section responsive */
+    .future-sponsor {
+        text-align: center;
+        padding: 0;
+        padding-top: 5px;
+        width: 100%;
+        height: 100%;
+        background-color: burlywood;
+        margin: 0;
+        margin-top: 50px;
+        border-radius: 20px;
+        color: white;
+    }
+
+    .future-sponsor img {
+        width: 150px;
+        height: 150px;
+        margin-top: -30px;
+    }
+
     /* footer responsive */
     footer {
         background-color: rgba(255, 144, 14, 0.1);
@@ -385,4 +423,5 @@ footer p {
     footer p {
         padding: 0;
     }
+
 }
