@@ -1,0 +1,59 @@
+/* Common Style */
+body {
+    font-family: 'Work Sans';
+    font-style: normal;
+}
+
+.heading {
+    font-size: 45px;
+}
+
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 0 240px;
+}
+
+/* Navbar Style */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    column-gap: 40px;
+}
+
+.nav-item li {
+    list-style: none;
+}
+
+.nav-item li a {
+    text-decoration: none;
+    color: black;
+    /* margin-right: 30px; */
+}
+
+/* Banner Section style*/
+
+/* Mobile Device Responsive */
+@media screen and (max-width:576px) {
+    header {
+        padding: 0;
+    }
+
+    /* navbar responsive */
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        flex-direction: column;
+        margin-top: -10px;
+        row-gap: 10px;
+        margin-right: 20px;
+    }
+}
