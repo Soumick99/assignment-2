@@ -168,14 +168,34 @@ nav {
     height: 300px;
     background-color: rgba(173, 216, 230, 0.608);
 }
-.achievement h1{
-    transition:font-size 2s;
+
+.achievement h1 {
+    transition: font-size 2s;
     transition-timing-function: linear;
 }
 
-.achievement:hover h1{
+.achievement:hover h1 {
     font-size: 80px;
 }
+
+/* Sponsor Section Style */
+.sponsors-logo {
+    display: flex;
+    column-gap: 155px;
+    color: #727272;
+}
+
+.sponsors-info {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 102px;
+    margin-bottom: 50px;
+    width: 862px;
+}
+
+
+
+
 
 /* Mobile Device Responsive */
 @media screen and (max-width:576px) {
@@ -295,4 +315,55 @@ nav {
         margin-top: 10px;
         padding: 0 30px 10px 30px;
     }
+
+    .features-description-list p {
+        margin-top: 2px;
+    }
+
+    /* Achievement Section */
+    .our-achievement {
+        margin-top: 100px;
+    }
+
+    .achievement-info {
+        width: 100%;
+    }
+
+    .achievement-list {
+        flex-direction: column;
+        margin-top: 30px;
+        row-gap: 10px;
+    }
+
+    .achievement {
+        margin: 0 auto;
+        width: 70%;
+        height: 60%;
+    }
+
+    .achievement:hover {
+        width: 90%;
+        height: 90%;
+    }
+
+    /* Sponsor Section Style */
+    .sponsors-logo {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        column-gap: 50px;
+    }
+
+    .sponsors-logo img {
+        width: 60px;
+        height: 35px;
+    }
+
+    .sponsors-info {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
 }
